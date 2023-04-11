@@ -1,0 +1,65 @@
+$tcolor: rgb(73, 226, 2);
+.activity {
+  padding: 50px 8%;
+  // background-color: rgba(255, 255, 255, 0.048);
+
+  @media (max-width: 990px) {
+    padding: 10% 20px;
+  }
+  @media (max-width: 790px) {
+    padding: 20px;
+  }
+  .txt {
+    padding: 20px 0;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 790px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4.7em;
+      font-weight: bold;
+      margin: 10px 0;
+      color: white;
+      @media (max-width: 990px) {
+        font-size: 3.7em;
+      }
+      @media (max-width: 590px) {
+        font-size: 2.5em;
+      }
+    }
+    p {
+      font-size: 1.1em;
+      font-weight: 400;
+      margin: 10px 0;
+      color: white;
+      @media (max-width: 990px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .actives{
+    .act{
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.027);
+        @media (max-width: 540px) {
+            
+            text-align: center;
+          }
+        .icond{
+            font-size: 2em;
+            padding: 10px;
+            color: #000;
+            background-color: $tcolor;
+        }
+        p{
+            color: #ccc;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    }
+  }
+}

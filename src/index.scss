@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  scroll-behavior: smooth;
+}
+// variables
+$pcolor: purple;
+$dcolor: indigo;
+$tcolor: rgb(73, 226, 2);
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #000;
+  color: white;
+}
+
+.theme {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.dark {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.gride {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  list-style: none;
+  @media (max-width: 1090px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media (max-width: 908px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 340px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.grides {
+  display: grid;
+
+  gap: 20px;
+  list-style: none;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 540px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.footer-section {
+  .partners {
+    padding: 20px 10%;
+    background-color: rgb(0, 0, 0);
+    @media (max-width: 790px) {
+      padding: 10px;
+    }
+    h1 {
+      font-size: 2em;
+      margin: 20px auto;
+    }
+    .lite {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin: 0 auto;
+
+      @media (max-width: 800px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: 440px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 340px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+    .btn-max {
+      margin: 20px auto;
+    }
+  }
+  .nav {
+    padding: 20px 10%;
+    background-color: rgb(7, 7, 7);
+    @media (max-width: 790px) {
+      flex-direction: column;
+    }
+    .col {
+      a {
+        text-decoration: none;
+        color: #fff;
+        margin: 10px;
+        @media (max-width: 790px) {
+          margin: 2px;
+        }
+        &:hover {
+          color: $tcolor;
+        }
+        img {
+          width: 100px;
+        }
+      }
+      .social {
+        a {
+          .ico {
+            font-size: 3em;
+            padding: 10px;
+            background-color: #fff;
+            color: $tcolor;
+            margin: 5px;
+            border-radius: 25px;
+            &:hover {
+              background-color: $tcolor;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    border: solid 0.5px #ccc;
+  }
+  .copy {
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+    padding: 20px;
+  }
+}
+
+.btn-max {
+  padding: 10px;
+  width: 30%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: $tcolor;
+  border: 0;
+  border-radius: 10px;
+  margin: 20px 0;
+  @media (max-width: 790px) {
+    width: 100%;
+    margin: 10px;
+  }
+  &:hover {
+    border: solid 2px $tcolor;
+    color: $tcolor;
+    background-color: transparent;
+  }
+}
+
+// page head section
+
+.page-head {
+  padding: 10%;
+  .txt {
+    padding: 20px 0;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 790px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.7em;
+      font-weight: bold;
+      margin: 10px 0;
+      color: white;
+      @media (max-width: 990px) {
+        font-size: 3.7em;
+      }
+      @media (max-width: 590px) {
+        font-size: 2.5em;
+      }
+    }
+    p {
+      font-size: 1.1em;
+      font-weight: 400;
+      margin: 10px 0;
+      color: white;
+      @media (max-width: 990px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

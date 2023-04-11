@@ -1,0 +1,39 @@
+// variables
+$pcolor: purple;
+$dcolor: indigo;
+$tcolor: rgb(73, 226, 2);
+
+.blog-page{
+    .blog-head{
+        padding:10% 8%;
+        background-image: url(../../static/gradient-technology-purple-background_23-2149118845.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -75px;
+        h1{
+            font-size: 6em;
+            color: $tcolor;
+        }
+    }
+    .posts{
+        padding: 8%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 25px;
+        .post{
+            padding: 10px;
+            img{
+                width: 100%;
+            }
+            h1{
+                text-transform: none;
+                font-size: 1.1em;
+                font-weight: 500;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}

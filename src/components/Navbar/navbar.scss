@@ -1,0 +1,134 @@
+// variables
+$pcolor: purple;
+$dcolor: indigo;
+$tcolor: rgb(73, 226, 2);
+
+.navbar {
+  width: 100%;
+  padding: 10px 8%;
+  position: sticky;
+  top: 0;
+  @media (max-width: 990px) {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    width: 90px;
+    img {
+      width: 100%;
+    }
+  }
+  .navbar-nav {
+    @media (max-width: 768px) {
+      display: none;
+    }
+    .nav-item {
+      position: relative;
+      &:nth-child(6) {
+        background-color: $tcolor;
+        padding: 10px;
+        border-radius: 10px;
+       
+        a {
+          color: white;
+        }
+        &:hover {
+          border: solid 2px $tcolor;
+          color: $tcolor;
+          background-color: transparent;
+        }
+      } 
+      a {
+        padding: 10px;
+        color: $tcolor;
+        text-transform: capitalize;
+        font-weight: 300;
+        font-size: 1.1em;
+        text-decoration: none;
+        &:hover {
+          // background-color: rgba(2, 226, 88, 0.116);
+          color: $tcolor;
+        }
+      }
+
+      .offmenu {
+        display: none;
+      }
+    }
+  }
+
+  //   mobile
+  .navbar-mobile {
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: $dcolor;
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .nav-item {
+      width: 100%;
+      padding: 10px;
+      position: relative;
+      &:nth-child(6) {
+        background-color: $tcolor;
+        padding: 10px;
+        border-radius: 10px;
+       
+        a {
+          color: white;
+        }
+        &:hover {
+          border: solid 2px $tcolor;
+          color: $tcolor;
+          background-color: transparent;
+        }
+      } 
+      a {
+        color: $tcolor;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 1.2em;
+        text-decoration: none;
+      }
+     
+    }
+    .offmenu {
+      display: none;
+    }
+    .drop {
+      margin: 10px;
+    }
+  }
+
+  .toleft {
+    left: -100%;
+  }
+  .down {
+    width: 0;
+    // display: none;
+  }
+  //   togle{{{{,cnbjhf g fgdfghghf
+
+  .toggle {
+    padding: 10px;
+    font-size: 2em;
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      z-index: 20;
+      color: $tcolor;
+    }
+  }
+}
+.colored{
+  background-color: rgba(255, 255, 255, 0.082);
+  backdrop-filter: blur(2em);
+}
+
+// dropdown{

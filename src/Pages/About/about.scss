@@ -1,0 +1,31 @@
+// variables
+$pcolor: purple;
+$dcolor: indigo;
+$tcolor: rgb(73, 226, 2);
+
+.about-section {
+  @media (max-width: 990px) {
+    // padding: 20px;
+  }
+  .about-header {
+    background-color: $pcolor;
+    text-align: center;
+    padding:10% 8%;
+    margin-top: -71px;
+    @media (max-width: 768px) {
+        margin-top: -80px;
+        padding: 20% 0;
+      }
+    h1 {
+      font-size: 5em;
+      color: $tcolor;
+      @media (max-width: 490px) {
+        font-size: 3em;
+      }
+    }
+  }
+
+  .about-d{
+    padding: 8%;
+  }
+}

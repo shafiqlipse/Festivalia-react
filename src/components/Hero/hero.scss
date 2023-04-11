@@ -1,0 +1,80 @@
+// variables
+$pcolor: purple;
+$dcolor: indigo;
+$tcolor: rgb(73, 226, 2);
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(36, 36, 36, 0.6)),
+    url(../../static/bg.jpg);
+  // text-align: center;
+  background-size: cover;
+  padding: 8%;
+  margin-top: -100px;
+  @media (max-width: 990px) {
+    padding: 10% 20px;
+  }
+  @media (max-width: 790px) {
+    margin-top: -81px;
+  }
+  .left {
+    padding: 20px 0;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 790px) {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      width: 35%;
+    }
+    h1 {
+      font-size: 4.7em;
+      font-weight: bold;
+      margin: 10px 0;
+      color: white;
+      @media (max-width: 990px) {
+        font-size: 3.7em;
+      }@media (max-width: 590px) {
+        font-size: 2.5em;
+      }
+    }
+    p {
+      font-size: 1.1em;
+      font-weight: 400;
+      margin: 10px 0;
+      color: white;
+      @media (max-width: 990px) {
+        font-size: 16px;
+      }
+    }
+    .list {
+      width: 100%;
+      margin: 20px auto;
+      justify-content: space-evenly;
+
+      @media (max-width: 690px) {
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        text-align: left;
+      }
+      .loc {
+        margin: 20px;
+        .icon {
+          font-size: 2em;
+          color: white;
+        }
+        span {
+          font-size: 1.5em;
+          color: $tcolor;
+          text-transform: uppercase;
+          font-weight: bold;
+          @media (max-width: 690px) {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+$tcolor: rgb(73, 226, 2);
+.vendors {
+  padding: 10%;
+  margin-top: -100px;
+  @media (max-width: 1090px) {
+    padding: 10% 20px;
+  }
+  @media (max-width: 790px) {
+    padding: 10% 20px;
+  }
+  .txt {
+    padding: 20px 0;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 790px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.7em;
+      font-weight: bold;
+      margin: 10px 0;
+      color: white;
+      @media (max-width: 990px) {
+        font-size: 3.7em;
+      }
+      @media (max-width: 590px) {
+        font-size: 2.5em;
+      }
+    }
+    p {
+      font-size: 1.1em;
+      font-weight: 400;
+      margin: 10px 0;
+      color: white;
+      @media (max-width: 990px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .vend {
+    padding: 20px 0;
+    .pac {
+      padding: 40px;
+      border-radius: 20px;
+      border: solid 2px white;
+      text-align: center;
+      hr {
+        margin: 20px 0;
+      }
+      h1{
+        font-size: 3em;
+        color: $tcolor;
+      }
+      h3{
+        font-size: 1.2em;
+        font-weight: 400px;
+        color: #ccc;
+      }
+      .list{
+        list-style-type: disc;
+        margin-left: 20px;
+        text-align: left;
+        li{
+            margin: 10px 0;
+        }
+      }
+    }
+  }
+  .form {
+    @media (max-width: 790px) {
+      flex-direction: column-reverse;
+    }
+    .left {
+      width: 45%;
+      @media (max-width: 790px) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+      li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 2em;
+        padding: 20px;
+      }
+      .form-control {
+        padding: 20px;
+        text-align: left;
+        align-items: start;
+        background-color: rgba(255, 255, 255, 0.048);
+        h3 {
+          font-weight: 400;
+          text-align: left;
+        }
+        input,
+        select {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 10px;
+          outline: none;
+        }
+        .btn-max {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
